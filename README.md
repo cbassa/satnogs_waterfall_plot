@@ -7,7 +7,7 @@ This `python` script uses `matplotlib` to compute the average power level of the
 
 By default it uses the `jet` colormap, but any colormap from the [`matplotlib` library](https://matplotlib.org/examples/color/colormaps_reference.html) can be used.
 
-To use this plotter, adapt the `observer.py` script of `satnogs-client` (located at `/var/lib/satnogs/lib/python2.7/site-packages/satnogsclient/observer/observer.py` on Raspbian) in the following way:
+To use this plotter, adapt the `observer.py` script of `satnogs-client` (located at `/var/lib/satnogs/lib/python2.7/site-packages/satnogsclient/observer/observer.py` on Raspbian) by commenting out the `gnuplot` command and substituting it with the `python` script of this repository. You may have to adjust the path of the `python` script if you're not running Raspbian.
 
 ```
 #            plot = subprocess.call("gnuplot -e \"inputfile='%s'\" \                                                                                                                                                                                            
