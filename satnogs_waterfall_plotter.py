@@ -47,7 +47,7 @@ else:
     vmin=-100
     vmax=-50
     
-cmap="jet"
+cmap="viridis"
 print("%s %.2f %.2f %.2f %.2f %.2f"%(fname,np.mean(spec[c]),np.median(spec[c]),np.std(spec[c]),vmin,vmax))
 
 # Make plot
